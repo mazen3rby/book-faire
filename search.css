@@ -1,0 +1,108 @@
+
+.search-section {
+    background-color: #c6dcf8;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+    }
+    
+    .search-section h2 {
+    font-size: 28px;
+    color: #2e5d9f;
+    margin-bottom: 20px;
+    }
+    
+    .search-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    }
+    
+    .search-section input[type="text"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #aacbee;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 90%;
+    transition: 0.3s ease;
+    }
+    
+    .search-section input[type="text"]:focus {
+    outline: none;
+    border-color: #3e7cb1;
+    box-shadow: 0 0 5px rgba(62, 124, 177, 0.4);
+    }
+    
+    .search-section button {
+    padding: 12px 24px;
+    background-color: #3e7cb1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    }
+    
+    .search-section button:hover {
+    background-color: #2e5d9f;
+    }
+    
+    /* Search Results */
+    .search-results {
+    background-color: #2e5d9f;
+    padding: 50px 20px;
+    animation: fadeUp 1s ease;
+    }
+    
+    .search-results h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #e2e6eb;
+    margin-bottom: 30px;
+    }
+    
+    .book-result {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 10px 20px rgba(14, 14, 14, 0.08);
+    transition: 0.3s ease;
+    }
+    
+    .book-result:hover {
+    box-shadow: 0 20px 25px #213858;
+    transform: translateY(-5px);
+    }
+    
+    .book-result h4 {
+    font-size: 20px;
+    color: #2e5d9f;
+    margin-bottom: 10px;
+    }
+    
+    .book-result p {
+    color: #555;
+    line-height: 1.5;
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+    .search-section form {
+    flex-direction: column;
+    }
+    
+    .search-section input[type="text"] {
+    width: 100%;
+    }
+    
+    .book-result {
+    padding: 15px;
+    }
+    }

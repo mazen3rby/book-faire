@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Fair</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="home.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <h1>📚 Book Fair & Literature</h1>
+      </div>
+      <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+          <span class="current-lang">EN</span>
+          <i class="fas fa-globe"></i>
+        </button>
+      </div>
+    </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="home.html" class="active" data-translate="home">Home</a></li>
+        <li><a href="search.html" data-translate="search">Search</a></li>
+        <li><a href="blog.html" data-translate="blog">Blog</a></li>
+        <li><a href="release.html" data-translate="releases">New Releases</a></li>
+        <li><a href="forum.html" data-translate="forum">Forum</a></li>
+        <li><a href="feed back.html" data-translate="feedback">Feedback</a></li>
+        <li><a href="profile.html" data-translate="profile">Profile</a></li>
+        <li class="admin-link" style="display: none;"><a href="Admin.html" data-translate="adminPanel">Admin Panel</a></li>
+        <li><a href="login.html" data-translate="login">Login</a></li>
+        <li><a href="register.html" data-translate="register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2 data-translate="welcome">Welcome to Book Fair & Literature</h2>
+      <p data-translate="welcomeMessage">Explore thousands of books, reviews, author interviews, and join our reading community today.</p>
+    </section>
+
+    <section class="featured-books">
+      <h3 data-translate="featuredBooks">🌟 Featured Books</h3>
+      <div class="book-list">
+        <div class="book-item">
+          <a href="book-details.html?id=1">
+            <img src="./9781781109830.jpg" alt="Book 1">
+            <p>Book Title One</p>
+          </a>
+        </div>
+        <div class="book-item">
+          <a href="book-details.html?id=2">
+            <img src="./9781781109854.jpg" alt="Book 1">
+            <p>Book Title Two</p>
+          </a>
+        </div>
+        <div class="book-item">
+          <a href="book-details.html?id=3">
+            <img src="./9781781109878.jpg" alt="Book 3">
+            <p>Book Title Three</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2024 Book Fair & Literature. All rights reserved.</p>
+  </footer>
+  <script src="translations.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>

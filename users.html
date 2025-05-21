@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Book Fair & Literature</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>📚 Book Fair & Literature</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="releases.html">New Releases</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="Admin.html">Admin Panel</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="admin-section">
+            <h2>👥 User Management</h2>
+            <div class="admin-actions">
+                <button onclick="showAddUserForm()">Add New User</button>
+                <input type="text" id="searchUser" placeholder="Search users..." onkeyup="searchUsers()">
+            </div>
+            <div class="users-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTableBody">
+                        <!-- Users will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Book Fair & Literature. All rights reserved.</p>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script src="users.js"></script>
+</body>
+</html> 

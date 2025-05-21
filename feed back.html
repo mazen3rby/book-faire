@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Book Fair & Literature</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="feed back.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <h1>📚 Book Fair & Literature</h1>
+      </div>
+      <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+          <span class="current-lang">EN</span>
+          <i class="fas fa-globe"></i>
+        </button>
+      </div>
+    </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="home.html" data-translate="home">Home</a></li>
+        <li><a href="search.html" data-translate="search">Search</a></li>
+        <li><a href="blog.html" data-translate="blog">Blog</a></li>
+        <li><a href="release.html" data-translate="releases">New Releases</a></li>
+        <li><a href="forum.html" data-translate="forum">Forum</a></li>
+        <li><a href="feed back.html" class="active" data-translate="feedback">Feedback</a></li>
+        <li><a href="profile.html" data-translate="profile">Profile</a></li>
+        <li class="admin-link" style="display: none;"><a href="Admin.html" data-translate="adminPanel">Admin Panel</a></li>
+        <li><a href="login.html" data-translate="login">Login</a></li>
+        <li><a href="register.html" data-translate="register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="feedback-section">
+      <h2 data-translate="feedbackTitle">📩 We'd Love to Hear from You</h2>
+      <form action="#" method="post">
+        <label for="name" data-translate="yourName">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" data-translate="yourEmail">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message" data-translate="yourMessage">Your Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" data-translate="sendFeedback">Send Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2024 Book Fair & Literature. All rights reserved.</p>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="navbar.js"></script>
+  <script src="feed back.js"></script>
+
+</body>
+</html>

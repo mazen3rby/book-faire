@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - Book Fair & Literature</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>📚 Book Fair & Literature</h1>
+    </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="releases.html">New Releases</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="Admin.html" class="active">Admin Panel</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="admin-section">
+      <h2>⚙ Admin Dashboard</h2>
+      <div class="admin-cards">
+        <div class="admin-card">
+          <h3>👥 Users</h3>
+          <p>Total Registered Users: <span id="userCount">...</span></p>
+          <a href="users.html">Manage Users</a>
+        </div>
+        <div class="admin-card">
+          <h3>📘 Books</h3>
+          <p>Books Available: <span id="bookCount">...</span></p>
+          <a href="books.html">Add / Edit / Delete Books</a>
+        </div>
+        <div class="admin-card">
+          <h3>✍ Blog Posts</h3>
+          <p>Total Posts: <span id="postCount">...</span></p>
+          <a href="blog-management.html">Manage Blog</a>
+        </div>
+        <div class="admin-card">
+          <h3>📩 Feedback</h3>
+          <p>New Messages: <span id="messageCount">...</span></p>
+          <a href="messages.html">View Messages</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Book Fair & Literature. All rights reserved.</p>
+  </footer>
+
+  <script src="navbar.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

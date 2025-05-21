@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Book Fair & Literature</title>
+    <link rel="stylesheet" href="book-details.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <h1>📚 Book Fair & Literature</h1>
+            </div>
+            <div class="language-toggle">
+                <button id="langToggle" class="lang-btn">
+                    <span class="current-lang">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html" data-translate="home">Home</a></li>
+                <li><a href="search.html" data-translate="search">Search</a></li>
+                <li><a href="blog.html" data-translate="blog">Blog</a></li>
+                <li><a href="release.html" data-translate="releases">New Releases</a></li>
+                <li><a href="forum.html" data-translate="forum">Forum</a></li>
+                <li><a href="feed back.html" data-translate="feedback">Feedback</a></li>
+                <li><a href="profile.html" data-translate="profile">Profile</a></li>
+                <li class="admin-link" style="display: none;"><a href="Admin.html" data-translate="adminPanel">Admin Panel</a></li>
+                <li><a href="login.html" data-translate="login">Login</a></li>
+                <li><a href="register.html" data-translate="register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="book-container">
+            <div class="book-image">
+                <img id="bookImage" src="" alt="Book Cover">
+            </div>
+            <div class="book-info">
+                <h1 id="bookTitle" data-translate="bookDetails">Book Details</h1>
+                <div class="book-meta">
+                    <p><strong data-translate="author">Author:</strong> <span id="bookAuthor"></span></p>
+                    <p><strong data-translate="category">Category:</strong> <span id="bookCategory"></span></p>
+                    <p><strong data-translate="price">Price:</strong> <span id="bookPrice"></span></p>
+                </div>
+                <div class="book-description">
+                    <h2 data-translate="description">Description</h2>
+                    <p id="bookDescription"></p>
+                </div>
+                <div class="book-actions">
+                    <button class="add-to-wishlist" data-translate="addToWishlist">
+                        <i class="fas fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Book Fair & Literature. All rights reserved.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="navbar.js"></script>
+    <script src="book-details.js"></script>
+</body>
+</html> 

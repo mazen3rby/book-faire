@@ -1,0 +1,74 @@
+.feedback-section {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    animation: fadeIn 0.7s ease-in-out;
+    }
+    
+    .feedback-section h2 {
+    text-align: center;
+    color: #2e5d9f;
+    font-size: 28px;
+    margin-bottom: 30px;
+    }
+    
+    /* Form Styling */
+    .feedback-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+    
+    .feedback-section label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    }
+    
+    .feedback-section input,
+    .feedback-section textarea {
+    padding: 12px 14px;
+    border: 1px solid #b3cef5;
+    border-radius: 10px;
+    background-color: #f5faff;
+    font-size: 15px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feedback-section input:focus,
+    .feedback-section textarea:focus {
+    border-color: #4f88c6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 136, 198, 0.3);
+    }
+    
+    .feedback-section button {
+    padding: 12px;
+    background-color: #4f88c6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .feedback-section button:hover {
+    background-color: #3a6fa3;
+    }
+    
+    /* Fade-in animation */
+    @keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(15px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    }

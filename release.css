@@ -1,0 +1,59 @@
+.releases-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    animation: fadeIn 0.8s ease-in-out;
+    }
+    
+    .releases-section h2 {
+    text-align: center;
+    color: #2e5d9f;
+    font-size: 30px;
+    margin-bottom: 30px;
+    }
+    
+    .release-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    }
+    
+    .release-card {
+    background-color: #f4f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #3e7cb1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .release-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+    
+    .release-card h3 {
+    color: #2e5d9f;
+    margin-bottom: 10px;
+    font-size: 20px;
+    }
+    
+    .release-card p {
+    margin: 6px 0;
+    color: #333;
+    font-size: 15px;
+    }
+    
+    /* Fade-in animation */
+    @keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    }
